@@ -1,0 +1,12 @@
+import { Button, VerticalBox } from "std-widgets.slint";
+MainWindow := Window {
+	width: 600px;
+    height: 500px;
+    
+    VerticalBox {
+        Button {
+            text: "Click Me";
+            clicked => { self.text = "Clicked"; }
+        }
+    }
+}
